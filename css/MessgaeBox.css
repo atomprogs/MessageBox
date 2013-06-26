@@ -1,0 +1,282 @@
+﻿/* Message Box V 1.0 By Rajeev Ranjan */
+/* This Message Box is Opensource any one can modify this code according to their requirement */
+/* Please vist me http://www.hackme.co.vu */
+.messageBox
+{
+	min-height: 70px;
+	width: 370px;
+	display: block;
+	position: relative; /*Border Radius*/
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px; /*Box Shadow*/
+	-webkit-box-shadow: #666 0px 10px 10px;
+	-moz-box-shadow: #666 0px 10px 10px;
+	box-shadow: #666 0px 10px 10px; /*margin-bottom: 30px;*/
+	behavior: url(css/PIE.htc);
+}
+.messageBox .text
+{
+	overflow: hidden;
+}
+
+.pUpperBox
+{
+	width: 300px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #323232;
+	font-size: 12px;
+	line-height: 12px;
+	margin-right: 12px;
+	margin-top: 15px; /*for lt IE8*/ /* TEXT SHADOW */
+	text-shadow: 0px 0px 1px #f9f9f9;
+}
+.pLowerBox
+{
+	width: 280px;
+	float: right;
+	text-align: left;
+	margin-left: 10px;
+}
+/* Sucess MessageBox */
+.msuccess
+{
+	border-top: 1px solid #edf7d0;
+	border-bottom: 1px solid #b7e789; /*Background Gradients*/
+	background: #dff3a8;
+	
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#dff3a8), to(#E09c4fb92B1B));
+	background: -webkit-linear-gradient(#dff3a8, #c4fb92);
+	background: -moz-linear-gradient(#dff3a8, #c4fb92);
+	background: -ms-linear-gradient(#dff3a8, #c4fb92);
+	background: -o-linear-gradient(#dff3a8, #c4fb92);
+	background: linear-gradient(#dff3a8, #c4fb92);
+	-pie-background: linear-gradient(#dff3a8, #c4fb92);
+}
+
+.msuccess .button
+{
+	width: 80px;
+	height:20px;
+	border: 1px solid #709900;
+	background: #9AC427;
+	background: -moz-linear-gradient(top,#9AC427,#9AC427);
+	background: -webkit-gradient(linear, left top, left bottom, from(#9AC427), to(#9AC427));
+}
+.msuccess button:hover
+{
+	background: #709900;
+	border: 1px solid #709900;
+	color: #f1f1f2;
+}
+
+.msuccess strong
+{
+	color: #61b316;
+	margin-right: 15px;
+}
+/* ERROR MessageBox */
+
+.merror
+{
+	background: #FBC1BC;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FBC1BC), to(#F07F7F));
+	background: -webkit-linear-gradient(#FBC1BC, #F07F7F);
+	background: -moz-linear-gradient(#FBC1BC, #F07F7F);
+	background: -ms-linear-gradient(#FBC1BC, #F07F7F);
+	background: -o-linear-gradient(#FBC1BC, #F07F7F);
+	background: linear-gradient(#FBC1BC, #F07F7F);
+	-pie-background: linear-gradient(#FBC1BC, #F07F7F);
+}
+
+
+
+.merror strong
+{
+	color: #b31616;
+	margin-right: 15px;
+}
+.merror .button
+{
+	width: 80px;
+	height:20px;
+	border: 1px solid #F00505;
+	background: #F54C4C;
+	background: -moz-linear-gradient(top,#F54C4C,#eea2a2);
+	background: -webkit-gradient(linear, left top, left bottom, from(#F54C4C), to(#F54C4C));
+	-pie-background: linear-gradient(#F54C4C, #F54C4C);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; /*Box Shadow*/
+	-webkit-box-shadow: #666 0px 10px 10px;
+	-moz-box-shadow: #666 0px 10px 10px;
+	box-shadow: #666 0px 10px 10px; /*margin-bottom: 30px;*/
+	
+	*behavior: url(css/PIE.htc);/* IE7 and below */
+}
+
+.merror .button:hover
+{
+	background: #B50202;
+	border: 1px solid #F00505;
+	color: #f1f1f2;
+	-pie-background: linear-gradient(#B50202, #B50202);
+	behavior: url(css/PIE.htc);
+}
+
+
+/* Infomation MessageBox */
+.minfo
+{
+	border-top: 1px solid #1BE0D6;
+	border-bottom: 1px solid #1BCCE0; /*Background Gradients*/
+	background: #1BC6E0;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#1BC6E0), to(#1BE0E0));
+	background: -webkit-linear-gradient(#1BC6E0, #1BE0E0);
+	background: -moz-linear-gradient(#1BC6E0, #1BE0E0);
+	background: -ms-linear-gradient(#1BC6E0, #1BE0E0);
+	background: -o-linear-gradient(#1BC6E0, #1BE0E0);
+	background: linear-gradient(#1BC6E0, #1BE0E0);
+	-pie-background: linear-gradient(#1BC6E0, #1BE0E0);
+}
+
+.minfo .button
+{
+	width: 80px;
+	height:20px;
+	border: 1px solid #146875;
+	background: #00A4BD;
+	background: -moz-linear-gradient(top,#00A4BD,#00A4BD);
+	background: -webkit-gradient(linear, left top, left bottom, from(#00A4BD), to(#00A4BD));
+	
+}
+.minfo button:hover
+{
+	background: #006878;
+	border: 1px solid #146875;
+	color: #f1f1f2;
+}
+.minfo strong
+{
+	color: #1B7EE0;
+	margin-right: 15px;
+}
+
+/* Alert MessageBox */
+.malert
+{
+	border-top: 1px solid #E0D31B;
+	border-bottom: 1px solid #E0601B; /*Background Gradients*/
+	background: #E0D31B;
+	
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#E0D31B), to(#E09B1B));
+	background: -webkit-linear-gradient(#E0D31B, #E09B1B);
+	background: -moz-linear-gradient(#E0D31B, #E09B1B);
+	background: -ms-linear-gradient(#E0D31B, #E09B1B);
+	background: -o-linear-gradient(#E0D31B, #E09B1B);
+	background: linear-gradient(#E0D31B, #E09B1B);
+	-pie-background: linear-gradient(#E0D31B, #E09B1B);
+}
+
+.malert .button
+{
+	width: 80px;
+	height:20px;
+	border: 1px solid #736B02;
+	background: #BFB300;
+	background: -moz-linear-gradient(top,#BFB300,#BFB300);
+	background: -webkit-gradient(linear, left top, left bottom, from(#BFB300), to(#BFB300));
+}
+.malert button:hover
+{
+	background: #736B02;
+	border: 1px solid #736B02;
+	color: #f1f1f2;
+}
+.malert strong
+{
+	color: #E0601B;
+	margin-right: 15px;
+}
+/* end hack */.CenterSUC
+{
+	position: absolute;
+	left: 40%;
+	top: 35%;
+	margin-top: -30px; /* make this half your image/element height */
+	margin-left: -30px; /* make this half your image/element width */
+}
+/*BackGround*/
+.mbackgroundIE
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: White;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+	height: 1000px;
+	width: 1000px;
+	min-height: 100%;
+	min-width: 100%;
+}
+.mbackground
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: White;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+	min-width: 100%;
+}
+.img
+{
+	width: 30px;
+	background: url(images/MessageBox/ERROR.png) no-repeat;
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=   'images/MessageBox/ERROR.png' ,sizingMethod= 'crop' );
+}
+
+.m
+{
+	border: 1px solid #696;
+	padding: 60px 0;
+	text-align: center;
+	width: 200px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: #666 0px 10px 10px;
+	-moz-box-shadow: #666 0px 10px 10px;
+	box-shadow: #666 0px 10px 10px;
+	background: #FB8D83;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FB8D83), to(#FF4747));
+	background: -webkit-linear-gradient(#FB8D83, #FF4747);
+	background: -moz-linear-gradient(#FB8D83, #FF4747);
+	background: -ms-linear-gradient(#FB8D83, #FF4747);
+	background: -o-linear-gradient(#FB8D83, #FF4747);
+	background: linear-gradient(#FB8D83, #FF4747);
+	-pie-background: linear-gradient(#FB8D83, #FF4747);
+	behavior: url(css/PIE.htc);
+}
+input[type=text]
+{
+    font-family: Tahoma, Arial, helvetica, sans-serif;
+	font-size: 1em;
+	vertical-align: middle;
+	font-weight: normal;
+	background-image: url(form_bg.jpg);
+	background-repeat: repeat-x;
+	border: 1px solid #c2bda7;
+	width: 120px;
+	color: #333333;
+	padding: 2px;
+	font-size: 1.05em;
+	margin: 0px 2px;
+	font-family: tahoma, arial, sans-serif;
+}
+

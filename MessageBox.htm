@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Message Box Example</title>
+    <script src="js/jquery-1.8.2.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.9.0.js" type="text/javascript"></script>
+    <script src="js/MessageBox.js" type="text/javascript"></script>
+    <link href="css/MessgaeBox.css" rel="stylesheet" type="text/css" />
+    <link href="css/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/smoothness/jquery.ui.theme.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        var erMsg = "";
+        function checkForValidation() {
+            erMsg = "";
+            $('#tb input[type=text]').each(function () {
+                if ($(this).val() == "") {
+                    erMsg += $(this).attr("title") + "<br>";
+                    $(this).css('border', '1px solid red');
+                }
+                else {
+                    $(this).css('border', '1px solid #c2bda7');
+                }
+            });
+
+            if (erMsg != "") {
+                MessageBox('Error', erMsg);
+            }
+            else {
+                MessageBox('Success', "Your Data Saved Successfully");
+                $('#tb input[type=text]').val("");
+            }
+
+        }
+    </script>
+    <style>
+    body
+    {
+        background-color:#F5F0F2;
+     }
+    </style>
+</head>
+<body>
+<div  style="width:1000px; text-align:center; font-size:30px; font-weight:bold;"><a href="#"> MessageBox Example</a></div>
+    <table id="tb" style="margin: 20px auto;  width:80%" class="ui-state-highlight">
+        <tr>
+            <td>
+                First Name
+            </td>
+            <td>
+                <input type="text" title="Enter Your First Name" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Middle Name
+            </td>
+            <td>
+                <input type="text" title="Enter Your Middle Name" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Last Name
+            </td>
+            <td>
+                <input type="text" title="Enter Your Last Name" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Mobile No.
+            </td>
+            <td>
+                <input type="text" title="Enter Your Mobile No" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+                <input type="button" value="Submit" onclick="checkForValidation();" id="btnMessageBox"
+                    class="ui-state-error" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
